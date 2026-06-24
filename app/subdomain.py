@@ -26,7 +26,7 @@ class SubdomainGenerator:
     MAX_ATTEMPTS = 10
 
     def __init__(self, sites_dir: Path):
-        self.sites_dir = sites_dir or settings.sites_dir
+        self.sites_dir = sites_dir or settings.site_dir
 
     def _random_name(self) -> str:
         adj = secrets.choice(self.ADJECTIVES)
